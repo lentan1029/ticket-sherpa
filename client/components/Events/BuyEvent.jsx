@@ -8,6 +8,7 @@ export default class HostEvent extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    console.log('handleSubmit is being called with:', this.refs, this.props.params.eventName)
     this.props.buyEvent(this.refs, this.props.params.eventName);
   }
 

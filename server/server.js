@@ -133,6 +133,7 @@ app.post('/api/events', (req, res) => {
 }
 */
 app.post('/api/tickets', (req, res) => {
+  console.log('api tickets called with:', req.body);
   rp({
     method: 'POST',
     url: `${config.SERVER_URL}:${config.ETH_SERVER_PORT}/api/tickets`,

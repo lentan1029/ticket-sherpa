@@ -20,6 +20,7 @@ const EventDetails = ({params: { eventName }, location: { query }}) => (
         '/buyevent/' + eventName,
         query: {
           eventName,
+          contractAddress: query.eventContractAddress,
         },
     }}
     >Buy Ticket</Link></h4>

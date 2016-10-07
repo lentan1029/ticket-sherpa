@@ -14,7 +14,7 @@ const hostEventsList = (state = [], action) => {
     case 'ADD_EVENT':
       return [...state, {
         numAttendees: action.numAttendees,
-        attendeesPaid: action.attendeesPaid,
+        // attendeesPaid: action.attendeesPaid,
         quota: action.quota,
         price: action.price,
         eventName: action.eventName,
